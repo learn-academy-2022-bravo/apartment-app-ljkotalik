@@ -35,14 +35,13 @@ class Header extends Component {
           }
         </Nav>
         <Nav>
-              <NavItem>
-                <NavLink to="/" className="nav-link">Home</NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink to="/about" className="nav-link">Apartment Listings</NavLink>
-              </NavItem>
-              
-            </Nav>
+          <NavItem>
+            <NavLink to="/" className="nav-link">Home</NavLink>
+          </NavItem>
+          <NavItem>
+            <NavLink to="/about" className="nav-link">Apartment Listings</NavLink>
+          </NavItem>
+        </Nav>
       </>
     )
   }
@@ -50,5 +49,3 @@ class Header extends Component {
 export default Header
 
 
-<p><NavLink to={`/apartmentindex`}>View All Available Apartments</NavLink></p>
-<p><NavLink to={`/apartmentnew`}>Add Your Apartment</NavLink></p>
