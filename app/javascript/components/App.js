@@ -27,10 +27,9 @@ class App extends Component {
             <Route path="/apartmentedit" component={ApartmentEdit} />
             <Route component={NotFound}/>
           </Switch>
+          <Footer/>
         </Router>
         
-        
-  
     )
   }
 }
