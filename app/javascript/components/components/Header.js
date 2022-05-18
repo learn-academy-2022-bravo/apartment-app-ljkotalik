@@ -17,7 +17,10 @@ class Header extends Component {
     return (
       <>
         <h1>Apartment App</h1>
-        <Nav>
+        <Nav classname="nav-bar">
+          <NavItem>
+            <NavLink to="/" className="nav-link">Home</NavLink>
+          </NavItem>
           {logged_in &&
             <NavItem>
               <a href={sign_out_route} className="nav-link">Sign Out</a>
@@ -33,13 +36,8 @@ class Header extends Component {
               <a href={new_user_route} className="nav-link">Sign Up</a>
             </NavItem>
           }
-        </Nav>
-        <Nav>
           <NavItem>
-            <NavLink to="/" className="nav-link">Home</NavLink>
-          </NavItem>
-          <NavItem>
-            <NavLink to="/about" className="nav-link">Apartment Listings</NavLink>
+            <NavLink to="/apartmentindex" className="nav-link">Apartment Listings</NavLink>
           </NavItem>
         </Nav>
       </>
